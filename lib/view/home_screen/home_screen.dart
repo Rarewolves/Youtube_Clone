@@ -11,47 +11,61 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorConstant.primaryblack,
-      
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.only(top: 48),
-          child: Column(children: [
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-              
-              Row(children: [
-                SizedBox(width: 15,),
-            Image.asset("assets/icons/youtube.png",scale: 16,),
-            SizedBox(width: 5,),
-            Text('YouTube',style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite),)
+      body: CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            backgroundColor: ColorConstant.primaryblack,
+            expandedHeight: 102,
+            floating: true,
+          flexibleSpace: FlexibleSpaceBar(
+            
+            background:   Column(
+              children: [SizedBox(height: 40,),
+                Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+           
+                  children: [
+                    
+                  
+                  Row(children: [
+                    SizedBox(width: 12),
+                   
+                Image.asset("assets/icons/youtube.png",scale: 18,),
+                SizedBox(width: 5,),
+                Text('YouTube',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite),)
           ],),
           Row(
-            children: [
-             Image.asset("assets/icons/cast.png",scale: 16,color: ColorConstant.primarywhite,),
-             SizedBox(width: 20,),
-            Image.asset("assets/icons/bell.png",scale: 20,color: ColorConstant.primarywhite,),
-             SizedBox(width: 20,),
-                      Image.asset("assets/icons/search.png",scale: 19,color: ColorConstant.primarywhite,),
-                       SizedBox(width: 20,),
+                children: [
+                 Image.asset("assets/icons/cast.png",scale: 18,color: ColorConstant.primarywhite,),
+                 SizedBox(width: 18,),
+                Image.asset("assets/icons/bell.png",scale: 24,color: ColorConstant.primarywhite,),
+                 SizedBox(width: 18,),
+                          Image.asset("assets/icons/search.png",scale: 21,color: ColorConstant.primarywhite,),
+                          SizedBox(width: 15,)
+                         
           ],)
-              
-            ],),
-            SizedBox(height: 10,),
-            SuggetionCard(mylist: DataBase.suggetionList,),
-            SizedBox(height: 5,),
-             ListView.builder(itemCount: DataBase.containercardList.length,
-             shrinkWrap: true,
-             physics: NeverScrollableScrollPhysics(),
-              itemBuilder: (context, index) => 
-             ContainerCard(textlist: DataBase.containercardList[index]["textlist"],title: DataBase.containercardList[index]["Name"],image: DataBase.containercardList[index]["Image"],avatarimage: DataBase.containercardList[index]["avatarImage"]),
-              
-              )
-           
+                  
+                ],),
+                SizedBox(height: 10),
+                 SuggetionCard(mylist: DataBase.suggetionList,) ,
+              ],
+            ),
+          ),
             
-               
-          ],),
-        ),
+            
+          
+
+          ),
+         SliverToBoxAdapter(
+          child: Column(children: List.generate(DataBase.containercardList.length, (index) =>
+             ContainerCard(textlist: DataBase.containercardList[index]["textlist"],title: DataBase.containercardList[index]["Name"],image: DataBase.containercardList[index]["Image"],avatarimage: DataBase.containercardList[index]["avatarImage"]),
+          
+          
+          ),),
+         )
+        ],
       ),
+      
+
     );
   }
 
