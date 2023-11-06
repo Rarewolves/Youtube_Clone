@@ -40,24 +40,37 @@ class _BottomNavigationState extends State<BottomNavigation> {
        },
         
         items: [
-      BottomNavigationBarItem(icon:Image.asset("assets/icons/house-black-silhouette-without-door.png",scale: 20,color: selectedindex==0 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
+      BottomNavigationBarItem(icon:Image.asset("assets/icons/house-black-silhouette-without-door.png",scale: 24,color: selectedindex==0 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
       label: 'Home'
       
       ),
-         BottomNavigationBarItem(icon:Image.asset("assets/icons/record.png",scale: 20,color: selectedindex==1 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
+         BottomNavigationBarItem(icon:Image.asset("assets/icons/record.png",scale: 24,color: selectedindex==1 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
       label: 'Shorts'
       ),
-       BottomNavigationBarItem(icon:CircleAvatar(backgroundColor: ColorConstant.primarywhite,radius: 22,child: 
-       
-       CircleAvatar(backgroundColor: ColorConstant.primaryblack,radius: 20,child: Image.asset("assets/icons/plus (1).png",scale: 20,color: ColorConstant.primarywhite,))
-       
+       BottomNavigationBarItem(icon:InkWell(
+        onTap: () {
+          showModalBottomSheet(backgroundColor:  ColorConstant.black,
+          elevation: 0,
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(25))),
+
+            context: context, builder:(context) => Container(
+            height: 400,
+            decoration: BoxDecoration(),
+
+          ),);
+        },
+         child: CircleAvatar(backgroundColor: ColorConstant.primarywhite,radius: 20,child: 
+         
+         CircleAvatar(backgroundColor: ColorConstant.primaryblack,radius: 18,child: Image.asset("assets/icons/plus (1).png",scale: 20,color: ColorConstant.primarywhite,))
+         
+         ),
        ),
       label: ''
       ),
-          BottomNavigationBarItem(icon:Image.asset("assets/icons/subscribe.png",scale: 20,color: selectedindex==2 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
+          BottomNavigationBarItem(icon:Image.asset("assets/icons/subscribe.png",scale: 24,color: selectedindex==2 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
       label: 'Scubscriptions'
       ),
-          BottomNavigationBarItem(icon: CircleAvatar(radius: 18,backgroundColor: ColorConstant.primarywhite,),
+          BottomNavigationBarItem(icon: CircleAvatar(radius: 16,backgroundColor: ColorConstant.primarywhite,),
       label: 'You'
       ),
       
