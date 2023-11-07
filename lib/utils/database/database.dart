@@ -140,4 +140,24 @@ class DataBase {
     "Create a post",
   
   ];
+
+ static  List<Map> AddbottomsheetList = [
+  {"images":ImageConstant.recordicon,"title": "Create a Short"},
+  {"images":ImageConstant.uploadicon,"title": "Upload a video"},
+    {"images":ImageConstant.liveicon,"title": "Go live"},
+      {"images":ImageConstant.writeicon,"title":  "Create a post"},
+  
+  ];
+   static  List<Map> AccountList = [
+  {"icons":ImageConstant.google,"title": "Switch account"},
+  {"icons":ImageConstant.google,"title": "Google Account"},
+    {"icons":ImageConstant.google,"title": "Turn on Incognito"},
+    
+  
+  ];
+
+
+
 }
+   
+   

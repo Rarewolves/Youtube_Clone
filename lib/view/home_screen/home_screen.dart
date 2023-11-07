@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
                  SizedBox(width: 18,),
                 Image.asset("assets/icons/bell.png",scale: 24,color: ColorConstant.primarywhite,),
                  SizedBox(width: 18,),
-                          Image.asset("assets/icons/search.png",scale: 21,color: ColorConstant.primarywhite,),
+                          Image.asset("assets/icons/search.png",scale: 20,color: ColorConstant.primarywhite,),
                           SizedBox(width: 15,)
                          
           ],)

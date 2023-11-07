@@ -18,7 +18,7 @@ class SubscriptionCard extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: CircleAvatar(radius: 35,child: Image.asset(imagelist[index]["image"]),),
+                child: CircleAvatar(radius: 32,child: Image.asset(imagelist[index]["image"]),),
               ),
               SizedBox(height: 5),
               Text(imagelist[index]["Names"],style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400,color: ColorConstant.grey,))

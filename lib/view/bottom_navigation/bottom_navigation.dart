@@ -65,20 +65,21 @@ class _BottomNavigationState extends State<BottomNavigation> {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(25))),
 
             context: context, builder:(context) => Container(
-            height: 400,
+            
            child: Padding(
-             padding: const EdgeInsets.only(left: 15,right: 15),
-             child: Column(children: [
+             padding: const EdgeInsets.only(left: 12,right: 15),
+             child: Column(mainAxisSize: MainAxisSize.min,
+              children: [
               SizedBox(height: 22,),
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                Text("Create",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite)),
-                Image.asset("assets/icons/close.png",scale:22,color: ColorConstant.grey,),
+                Text("Create",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite)),
+                Image.asset("assets/icons/close.png",scale:26,color: ColorConstant.grey,),
               
                
               ],),
               SizedBox(height: 25,),
-              Bottomsheet(addlist: DataBase.AddList)
+              Bottomsheet(addlist: DataBase.AddbottomsheetList)
               
              ],),
            ),
