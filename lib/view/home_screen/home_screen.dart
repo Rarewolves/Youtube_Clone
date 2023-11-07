@@ -56,8 +56,8 @@ class HomeScreen extends StatelessWidget {
 
           ),
          SliverToBoxAdapter(
-          child: Column(children: List.generate(DataBase.containercardList.length, (index) =>
-             ContainerCard(textlist: DataBase.containercardList[index]["textlist"],title: DataBase.containercardList[index]["Name"],image: DataBase.containercardList[index]["Image"],avatarimage: DataBase.containercardList[index]["avatarImage"]),
+          child: Column(children: List.generate(DataBase.homecontainercardList.length, (index) =>
+             ContainerCard(textlist: DataBase.homecontainercardList[index]["textlist"],title: DataBase.homecontainercardList[index]["Name"],image: DataBase.homecontainercardList[index]["Image"],avatarimage: DataBase.homecontainercardList[index]["avatarImage"]),
           
           
           ),),

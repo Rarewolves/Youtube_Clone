@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:youtube_clone/view/home_screen/home_screen.dart';
+
 import 'package:youtube_clone/view/splash_screen/splash_screen.dart';
 
 void main(){

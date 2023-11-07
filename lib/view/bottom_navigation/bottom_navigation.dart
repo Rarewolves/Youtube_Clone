@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_clone/utils/colorconstant/colorconstant.dart';
+import 'package:youtube_clone/utils/database/database.dart';
+import 'package:youtube_clone/view/addscreen/addscreen.dart';
+import 'package:youtube_clone/view/bottom_navigation/widgets/bottomsheet/bottomsheet.dart';
 import 'package:youtube_clone/view/home_screen/home_screen.dart';
+import 'package:youtube_clone/view/profile_screen/profile_screen.dart';
+import 'package:youtube_clone/view/shorts_screen/shorts_screen.dart';
+import 'package:youtube_clone/view/subscription_screen/subscription_screen.dart';
 
 class BottomNavigation extends StatefulWidget {
   const BottomNavigation({super.key});
@@ -12,8 +18,13 @@ class BottomNavigation extends StatefulWidget {
 class _BottomNavigationState extends State<BottomNavigation> {
   int selectedindex =0;
   List<Widget> widgetlist =[
-    HomeScreen()
+    HomeScreen(),
+    ShortsScreen(),
+    AddScreen(),
+    SubscriptionScreen(),
+    ProfileScreen()
   ];
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,7 +66,22 @@ class _BottomNavigationState extends State<BottomNavigation> {
 
             context: context, builder:(context) => Container(
             height: 400,
-            decoration: BoxDecoration(),
+           child: Padding(
+             padding: const EdgeInsets.only(left: 15,right: 15),
+             child: Column(children: [
+              SizedBox(height: 22,),
+              Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                Text("Create",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite)),
+                Image.asset("assets/icons/close.png",scale:22,color: ColorConstant.grey,),
+              
+               
+              ],),
+              SizedBox(height: 25,),
+              Bottomsheet(addlist: DataBase.AddList)
+              
+             ],),
+           ),
 
           ),);
         },
@@ -79,4 +105,6 @@ class _BottomNavigationState extends State<BottomNavigation> {
       
     );
   }
+
+
 }
