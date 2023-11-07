@@ -155,6 +155,13 @@ class DataBase {
     
   
   ];
+    static  List<Map> cardbuildlist = [
+  {"icons":ImageConstant.google,"title": "Switch account"},
+  {"icons":ImageConstant.google,"title": "Google Account"},
+  
+    
+  
+  ];
 
 
 
