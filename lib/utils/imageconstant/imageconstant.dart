@@ -12,4 +12,5 @@ class ImageConstant{
    static String uploadicon ="assets/icons/upload.png";
    static String writeicon ="assets/icons/write.png";
      static String google ="assets/icons/social.png";
+     static String plusicon ="assets/icons/plus (1).png";
 } 

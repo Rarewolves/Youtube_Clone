@@ -156,12 +156,26 @@ class DataBase {
   
   ];
     static  List<Map> cardbuildlist = [
-  {"icons":ImageConstant.google,"title": "Switch account"},
-  {"icons":ImageConstant.google,"title": "Google Account"},
+  {"map":[{"icons":ImageConstant.google,"title": "Google "},{"icons":ImageConstant.google,"title": "Google "}]},
+  {"map":[{"icons":ImageConstant.recordicon,"title": "Google "},{"icons":ImageConstant.recordicon,"title": "Google "}]}
+
   
     
   
   ];
+
+
+  static List<Map> playlistcardlist =[
+  {"heading":"Playlists","listmap":[{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage}]},
+
+
+  ];
+   static List<Map> historycardlist =[
+  {"heading":"Playlists","listmap":[{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage}]},
+
+
+  ];
+
 
 
 

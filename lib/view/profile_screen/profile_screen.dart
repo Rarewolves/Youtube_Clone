@@ -5,6 +5,7 @@ import 'package:youtube_clone/view/profile_screen/widgets/accountcard/accountcar
 import 'package:youtube_clone/view/profile_screen/widgets/card_builder/card_builder.dart';
 import 'package:youtube_clone/view/profile_screen/widgets/container_card/container_card.dart';
 import 'package:youtube_clone/view/profile_screen/widgets/history_list/history_list.dart';
+import 'package:youtube_clone/view/profile_screen/widgets/playlist_card/playlist_card.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -67,13 +68,19 @@ class ProfileScreen extends StatelessWidget {
                    child: HistoryList(),
                  ),
                  SizedBox(height: 30,),
-                 Padding(
-                   padding: const EdgeInsets.only(left: 12),
-                   child: HistoryList(),
-                 ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 12),
+                  child: ListView.builder(shrinkWrap: true,
+                  itemCount: DataBase.playlistcardlist.length,
+                  physics: NeverScrollableScrollPhysics(),
+                    itemBuilder: (context, index) => PlaylistCard(heading: DataBase.playlistcardlist[index]["heading"],imagetitlelist: DataBase.playlistcardlist[index]["listmap"] ,),)
+                ),
                  SizedBox(height: 20,),
                  ContainerCard(),
-                 CardBuilder(titlelist: DataBase.cardbuildlist),
+                 ListView.builder(itemCount: DataBase.cardbuildlist.length,
+                 shrinkWrap: true,
+                 physics: NeverScrollableScrollPhysics(),
+                  itemBuilder: (context, index) => CardBuilder(titlelist: DataBase.cardbuildlist[index]["map"]),)
          
                ],),
          ),
