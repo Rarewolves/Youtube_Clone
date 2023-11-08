@@ -12,14 +12,14 @@ class AccountCard extends StatelessWidget {
                   child: Row(children: List.generate(accountlist.length, (index) => Padding(
                     padding: const EdgeInsets.all(5),
                     child: Container(
-                      width: 180,height: 40,
+                      width: 150,height: 32,
                       decoration: BoxDecoration(color: ColorConstant.black,borderRadius: BorderRadius.circular(20)),
                       child: Row(
                         children: [
                           SizedBox(width: 15,),
-                        Image.asset(accountlist[index]["icons"],scale: 28,color: ColorConstant.primarywhite,),
+                        Image.asset(accountlist[index]["icons"],scale: 30,color: ColorConstant.primarywhite,),
                         SizedBox(width: 8,),
-                          Text(accountlist[index]["title"],style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite,)),
+                          Text(accountlist[index]["title"],style: TextStyle(fontSize: 12,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite,)),
                             SizedBox(width: 10,),
                       ],),
                     ),

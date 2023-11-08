@@ -149,15 +149,15 @@ class DataBase {
   
   ];
    static  List<Map> AccountList = [
-  {"icons":ImageConstant.google,"title": "Switch account"},
+  {"icons":ImageConstant.account,"title": "Switch account"},
   {"icons":ImageConstant.google,"title": "Google Account"},
-    {"icons":ImageConstant.google,"title": "Turn on Incognito"},
+    {"icons":ImageConstant.incognito,"title": "Turn on Incognito"},
     
   
   ];
     static  List<Map> cardbuildlist = [
-  {"map":[{"icons":ImageConstant.google,"title": "Google "},{"icons":ImageConstant.google,"title": "Google "}]},
-  {"map":[{"icons":ImageConstant.recordicon,"title": "Google "},{"icons":ImageConstant.recordicon,"title": "Google "}]}
+  {"map":[{"icons":ImageConstant.movieclapper,"title": "Your movies "},{"icons":ImageConstant.playbutton,"title": "Get YouTube Premium"}]},
+  {"map":[{"icons":ImageConstant.bargraph,"title":"Time watched "},{"icons":ImageConstant.questionmark,"title": "Help and feedback"}]}
 
   
     
@@ -171,9 +171,15 @@ class DataBase {
 
   ];
    static List<Map> historycardlist =[
-  {"heading":"Playlists","listmap":[{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage}]},
+  {"heading":"History","listmap":[{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage},{"title":"abcdefgh","subtitle":"ijklmnop","images":ImageConstant.containerimage}]},
 
 
+  ];
+  static List<String> shortslist=[
+    ImageConstant.shorts1,
+    ImageConstant.shorts2,
+    ImageConstant.shorts3,
+    ImageConstant.shorts4,
   ];
 
 

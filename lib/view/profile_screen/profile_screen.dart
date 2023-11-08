@@ -14,7 +14,7 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       backgroundColor: ColorConstant.primaryblack,
-      appBar: AppBar(
+      appBar: AppBar(elevation: 0,
         actions: [   Image.asset("assets/icons/cast.png",scale: 18,color: ColorConstant.primarywhite,),
                
                 Image.asset("assets/icons/bell.png",scale: 24,color: ColorConstant.primarywhite,),
@@ -33,7 +33,7 @@ class ProfileScreen extends StatelessWidget {
                    padding: const EdgeInsets.only(left: 12),
                    child: Row(
                              children: [
-                               CircleAvatar(radius: 40,child: Image.asset("assets/images/cat.png"),),
+                               CircleAvatar(radius: 38,child: Image.asset("assets/images/cat.png"),),
                                SizedBox(width: 12,),
                                Column(crossAxisAlignment: CrossAxisAlignment.start,
                                  children: [
@@ -65,7 +65,10 @@ class ProfileScreen extends StatelessWidget {
                  SizedBox(height: 15,),
                  Padding(
                    padding: const EdgeInsets.only(left: 12),
-                   child: HistoryList(),
+                   child:ListView.builder(itemCount: DataBase.historycardlist.length,
+                   shrinkWrap: true,
+                   physics: NeverScrollableScrollPhysics(),
+                    itemBuilder: (context, index) =>  HistoryList(heading: DataBase.historycardlist[index]["heading"],titleimagelist:  DataBase.historycardlist[index]["listmap"],),)
                  ),
                  SizedBox(height: 30,),
                 Padding(

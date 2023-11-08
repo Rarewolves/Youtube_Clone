@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: ColorConstant.primaryblack,
       body: CustomScrollView(
         slivers: [
-          SliverAppBar(
+          SliverAppBar(elevation: 0,
             backgroundColor: ColorConstant.primaryblack,
             expandedHeight: 102,
             floating: true,

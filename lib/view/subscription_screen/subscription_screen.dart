@@ -14,7 +14,7 @@ class SubscriptionScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorConstant.primaryblack,
       body: CustomScrollView(slivers: [
-         SliverAppBar(
+         SliverAppBar(elevation: 0,
             backgroundColor: ColorConstant.primaryblack,
             expandedHeight: 221,
             floating: true,

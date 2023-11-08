@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:youtube_clone/utils/colorconstant/colorconstant.dart';
 
 class HistoryList extends StatelessWidget {
-  const HistoryList({super.key});
+  const HistoryList({required this.heading, required this.titleimagelist});
+  final String heading;
+  final List<Map> titleimagelist;
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +15,10 @@ class HistoryList extends StatelessWidget {
                   padding: const EdgeInsets.only(right: 15),
                   child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                    Text("History",style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite,)),
-                    Container(height: 35,width:80,
+                    Text(heading,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite,)),
+                    Container(height: 35,width:65,
                       decoration: BoxDecoration(color: ColorConstant.primaryblack,borderRadius: BorderRadius.circular(20),border: Border.all(color: ColorConstant.black,width: 2)),
-                      child:   Center(child: Text("view All",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w600,color: ColorConstant.primarywhite,))),
+                      child:   Center(child: Text("view All",style: TextStyle(fontSize: 12,fontWeight: FontWeight.w500,color: ColorConstant.primarywhite,))),
 
                       
                       ),
@@ -25,15 +27,15 @@ class HistoryList extends StatelessWidget {
                 ),
                 SizedBox(height: 15,),
                 SingleChildScrollView(scrollDirection: Axis.horizontal,
-                  child: Row(children: List.generate(4, (index) => 
+                  child: Row(children: List.generate(titleimagelist.length, (index) => 
                   
                   Column(
                     children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 18),
+                      padding: const EdgeInsets.only(right: 15),
                       child: Container(
-                        height: 100,width: 160,
-                        decoration: BoxDecoration(color: Colors.amber,borderRadius: BorderRadius.circular(18)
+                        height: 90,width: 140,
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),image: DecorationImage(image: AssetImage(titleimagelist[index]["images"]),fit: BoxFit.cover)
                         ),
                       ),
                     ),
@@ -42,13 +44,13 @@ class HistoryList extends StatelessWidget {
                       children: [
                         Column(crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("view All",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w600,color: ColorConstant.primarywhite,)),
+                            Text(titleimagelist[index]["title"],style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,)),
                             SizedBox(height: 5,),
-                                 Text("view All",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400,color: ColorConstant.grey,)),
+                                 Text(titleimagelist[index]["subtitle"],style: TextStyle(fontSize: 13,fontWeight: FontWeight.w400,color: ColorConstant.grey,)),
                           ],
                         ),
-                        SizedBox(width: 65,),
-                        Icon(Icons.more_vert_outlined,color: ColorConstant.primarywhite,size: 24,)
+                        SizedBox(width: 55,),
+                        Icon(Icons.more_vert_outlined,color: ColorConstant.primarywhite,size: 15,)
                       ],
                     )
                   ],)

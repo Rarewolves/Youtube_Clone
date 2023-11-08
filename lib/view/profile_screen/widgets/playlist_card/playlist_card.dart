@@ -18,10 +18,10 @@ final List<Map> imagetitlelist;
                   padding: const EdgeInsets.only(right: 15),
                   child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                    Text(heading,style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite,)),
-                    Container(height: 35,width:80,
+                    Text(heading,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite,)),
+                    Container(height: 35,width:65,
                       decoration: BoxDecoration(color: ColorConstant.primaryblack,borderRadius: BorderRadius.circular(20),border: Border.all(color: ColorConstant.black,width: 2)),
-                      child:   Center(child: Text("view All",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w600,color: ColorConstant.primarywhite,))),
+                      child:   Center(child: Text("view All",style: TextStyle(fontSize: 12,fontWeight: FontWeight.w500,color: ColorConstant.primarywhite,))),
 
                       
                       ),
@@ -33,19 +33,19 @@ final List<Map> imagetitlelist;
                   child: Row(children: List.generate(imagetitlelist.length+1, (index) => 
                   imagetitlelist.length==index ?Padding(
                     padding: const EdgeInsets.only(left: 25),
-                    child: Container(height: 100,
+                    child: Container(height: 90,
                       child: Column(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [CircleAvatar(radius: 30,backgroundColor: ColorConstant.black,child: Image.asset(ImageConstant.plusicon,scale: 20,color: ColorConstant.primarywhite,),),Text("New playlist",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: ColorConstant.primarywhite,))],),
+                        children: [CircleAvatar(radius: 22,backgroundColor: ColorConstant.black,child: Image.asset(ImageConstant.plusicon,scale: 28,color: ColorConstant.primarywhite,),),Text("New playlist",style: TextStyle(fontSize: 15,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,))],),
                     ),
                   )
                   :
                   Column(
                     children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 18),
+                      padding: const EdgeInsets.only(right: 15),
                       child: Container(
-                        height: 100,width: 160,
-                        decoration: BoxDecoration(color: Colors.amber,borderRadius: BorderRadius.circular(18),image: DecorationImage(image: AssetImage(imagetitlelist[index]["images"],),fit: BoxFit.cover)
+                        height: 90,width: 140,
+                        decoration: BoxDecoration(borderRadius: BorderRadius.circular(12),image: DecorationImage(image: AssetImage(imagetitlelist[index]["images"],),fit: BoxFit.cover)
                         ),
                       ),
                     ),
@@ -54,13 +54,13 @@ final List<Map> imagetitlelist;
                       children: [
                         Column(crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(imagetitlelist[index]["title"],style: TextStyle(fontSize: 18,fontWeight: FontWeight.w600,color: ColorConstant.primarywhite,)),
+                            Text(imagetitlelist[index]["title"],style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,)),
                             SizedBox(height: 5,),
-                                 Text(imagetitlelist[index]["subtitle"],style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400,color: ColorConstant.grey,)),
+                                 Text(imagetitlelist[index]["subtitle"],style: TextStyle(fontSize: 13,fontWeight: FontWeight.w400,color: ColorConstant.grey,)),
                           ],
                         ),
-                        SizedBox(width: 65,),
-                        Icon(Icons.more_vert_outlined,color: ColorConstant.primarywhite,size: 24,)
+                        SizedBox(width: 55,),
+                        Icon(Icons.more_vert_outlined,color: ColorConstant.primarywhite,size: 15,)
                       ],
                     )
                   ],)

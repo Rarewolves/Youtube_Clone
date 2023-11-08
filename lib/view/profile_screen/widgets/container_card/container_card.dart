@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_clone/utils/colorconstant/colorconstant.dart';
+import 'package:youtube_clone/utils/imageconstant/imageconstant.dart';
 
 class ContainerCard extends StatelessWidget {
   const ContainerCard({super.key});
@@ -7,29 +8,29 @@ class ContainerCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-                height: 100,
+                height: 140,
                 decoration: BoxDecoration(color: ColorConstant.primaryblack,border: Border(bottom: BorderSide(width:1,color: ColorConstant.grey))),
                 child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                   Row(children: [
                     SizedBox(width: 20,),
-                    Image.asset("assets/icons/cast.png",scale: 18,color: ColorConstant.primarywhite,),
+                    Image.asset(ImageConstant.account,scale: 28,color: ColorConstant.primarywhite,),
                     SizedBox(width: 15,),
-                       Text("History",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700,color: ColorConstant.primarywhite,)),
+                       Text("Your videos",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,)),
                   ],),
                      Row(
                       children: [
                          SizedBox(width: 20,),
-                    Image.asset("assets/icons/cast.png",scale: 18,color: ColorConstant.primarywhite,),
+                    Image.asset(ImageConstant.download,scale: 28,color: ColorConstant.primarywhite,),
                     SizedBox(width: 15,),
                        Column(crossAxisAlignment: CrossAxisAlignment.start,
                          children: [
-                           Text("History",style: TextStyle(fontSize: 18,fontWeight: FontWeight.w700,color: ColorConstant.primarywhite,)),
-                              Text("History",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w700,color: ColorConstant.grey,)),
+                           Text("Downloads",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,)),
+                              Text("1 video",style: TextStyle(fontSize: 12,fontWeight: FontWeight.w400,color: ColorConstant.grey,)),
                          ],
                        ),
-                       SizedBox(width: 270,),
-                       CircleAvatar(radius: 10,backgroundColor: Colors.white,)
+                    
+                       CircleAvatar(radius: 10,backgroundColor: Colors.white,child: Image.asset(ImageConstant.tick,scale: 28,color: ColorConstant.primaryblack,),)
                   ],),
                 ],),
                );
