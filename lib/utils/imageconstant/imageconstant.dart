@@ -26,5 +26,7 @@ class ImageConstant{
                   static String shorts2 ="assets/images/It (2017), de Andy Muschietti.jpeg";
                    static String shorts3 ="assets/images/Money Heist Season 5.jpeg";
                     static String shorts4 ="assets/images/Peaky Blinders _ Poster design.jpeg";
+                         static String info ="assets/icons/information.png";
+                              static String devices ="assets/icons/responsive.png";
 
 } 

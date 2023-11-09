@@ -35,7 +35,28 @@ class HomeScreen extends StatelessWidget {
           ],),
           Row(
                 children: [
-                 Image.asset("assets/icons/cast.png",scale: 18,color: ColorConstant.primarywhite,),
+                 InkWell(onTap: () {
+                   showDialog(context: context, builder: (context) => AlertDialog(
+
+                     title: Text('Connect to a  device',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w700,color: ColorConstant.primarywhite,),),
+                     backgroundColor: ColorConstant.black,
+
+                  actions: [
+                    Column(children: [
+                      Row(children: [
+                        SizedBox(width: 5,),
+                        SizedBox(height: 20,width: 20,
+                          child: CircularProgressIndicator(color: ColorConstant.primarywhite,)),
+                        SizedBox(width: 10,),
+                      Text('Searching for devices',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,),),
+                      ],)
+                    ],)
+                  ],
+                   ),
+                                 
+                   );
+                 },
+                  child: Image.asset("assets/icons/cast.png",scale: 18,color: ColorConstant.primarywhite,)),
                  SizedBox(width: 18,),
                 Image.asset("assets/icons/bell.png",scale: 24,color: ColorConstant.primarywhite,),
                  SizedBox(width: 18,),

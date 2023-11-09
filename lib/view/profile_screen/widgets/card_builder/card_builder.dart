@@ -11,7 +11,7 @@ class CardBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
                 height: 140,
-                decoration: BoxDecoration(color: ColorConstant.primaryblack,border: Border(bottom: BorderSide(width:1,color: ColorConstant.grey))),
+                decoration: BoxDecoration(color: ColorConstant.primaryblack,border: Border(bottom: BorderSide(color: ColorConstant.grey))),
                 child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                  children: List.generate(titlelist.length, (index) =>  Row(children: [
                     SizedBox(width: 20,),

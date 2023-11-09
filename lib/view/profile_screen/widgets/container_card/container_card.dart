@@ -9,7 +9,7 @@ class ContainerCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
                 height: 140,
-                decoration: BoxDecoration(color: ColorConstant.primaryblack,border: Border(bottom: BorderSide(width:1,color: ColorConstant.grey))),
+                decoration: BoxDecoration(color: ColorConstant.primaryblack,border: Border(bottom: BorderSide(color: ColorConstant.grey))),
                 child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                   Row(children: [
@@ -18,19 +18,25 @@ class ContainerCard extends StatelessWidget {
                     SizedBox(width: 15,),
                        Text("Your videos",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,)),
                   ],),
-                     Row(
+                     Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                         SizedBox(width: 20,),
-                    Image.asset(ImageConstant.download,scale: 28,color: ColorConstant.primarywhite,),
+                        
+                   Row(children: [ SizedBox(width: 20,),
+                     Image.asset(ImageConstant.download,scale: 28,color: ColorConstant.primarywhite,),
                     SizedBox(width: 15,),
                        Column(crossAxisAlignment: CrossAxisAlignment.start,
                          children: [
                            Text("Downloads",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,)),
                               Text("1 video",style: TextStyle(fontSize: 12,fontWeight: FontWeight.w400,color: ColorConstant.grey,)),
                          ],
-                       ),
+                       ),],),
                     
-                       CircleAvatar(radius: 10,backgroundColor: Colors.white,child: Image.asset(ImageConstant.tick,scale: 28,color: ColorConstant.primaryblack,),)
+                       Padding(
+                         padding: const EdgeInsets.only(right: 20),
+                         child: CircleAvatar(radius: 10,backgroundColor: Colors.white,child: Image.asset(ImageConstant.tick,scale: 28,color: ColorConstant.primaryblack,),),
+                       ),
+                       
+
                   ],),
                 ],),
                );

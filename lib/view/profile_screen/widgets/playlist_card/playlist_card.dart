@@ -20,12 +20,12 @@ final List<Map> imagetitlelist;
                     children: [
                     Text(heading,style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite,)),
                     Container(height: 35,width:65,
-                      decoration: BoxDecoration(color: ColorConstant.primaryblack,borderRadius: BorderRadius.circular(20),border: Border.all(color: ColorConstant.black,width: 2)),
+                      decoration: BoxDecoration(color: ColorConstant.primaryblack,borderRadius: BorderRadius.circular(20),border: Border.all(color: ColorConstant.black,width: 1)),
                       child:   Center(child: Text("view All",style: TextStyle(fontSize: 12,fontWeight: FontWeight.w500,color: ColorConstant.primarywhite,))),
-
+     
                       
                       ),
-
+     
                   ],),
                 ),
                 SizedBox(height: 15,),
