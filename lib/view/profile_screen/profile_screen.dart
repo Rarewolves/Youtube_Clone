@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_clone/utils/colorconstant/colorconstant.dart';
 import 'package:youtube_clone/utils/database/database.dart';
+import 'package:youtube_clone/view/home_screen/widgets/alertdilog/alertdilog.dart';
 import 'package:youtube_clone/view/profile_screen/widgets/accountcard/accountcard.dart';
 import 'package:youtube_clone/view/profile_screen/widgets/card_builder/card_builder.dart';
 import 'package:youtube_clone/view/profile_screen/widgets/container_card/container_card.dart';
@@ -15,7 +16,10 @@ class ProfileScreen extends StatelessWidget {
     return  Scaffold(
       backgroundColor: ColorConstant.primaryblack,
       appBar: AppBar(elevation: 0,
-        actions: [   Image.asset("assets/icons/cast.png",scale: 18,color: ColorConstant.primarywhite,),
+        actions: [   InkWell(onTap: () {
+          showDialog(context: context, builder:(context) => AlertDilog());
+        },
+          child: Image.asset("assets/icons/cast.png",scale: 18,color: ColorConstant.primarywhite,)),
                
                 Image.asset("assets/icons/bell.png",scale: 24,color: ColorConstant.primarywhite,),
               

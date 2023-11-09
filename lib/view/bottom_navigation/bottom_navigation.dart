@@ -73,13 +73,13 @@ class _BottomNavigationState extends State<BottomNavigation> {
               SizedBox(height: 22,),
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                Text("Create",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite)),
-                Image.asset("assets/icons/close.png",scale:26,color: ColorConstant.grey,),
+                Text("Create",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite)),
+                Image.asset("assets/icons/close.png",scale:28,color: ColorConstant.grey,),
               
                
               ],),
               SizedBox(height: 25,),
-              Bottomsheet(addlist: DataBase.AddbottomsheetList)
+              Bottomsheet(addlist: DataBase.AddbottomsheetList), 
               
              ],),
            ),
@@ -97,7 +97,8 @@ class _BottomNavigationState extends State<BottomNavigation> {
           BottomNavigationBarItem(icon:Image.asset("assets/icons/subscribe.png",scale: 25,color: selectedindex==2 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
       label: 'Scubscriptions'
       ),
-          BottomNavigationBarItem(icon: CircleAvatar(radius: 14,backgroundColor: ColorConstant.primarywhite,),
+          BottomNavigationBarItem(icon: CircleAvatar(radius: 14,backgroundColor: ColorConstant.primarywhite,
+          child: Image.asset("assets/images/cat.png"),),
       label: 'You'
       ),
       

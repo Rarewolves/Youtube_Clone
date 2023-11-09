@@ -14,8 +14,8 @@ class SuggetionCard extends StatelessWidget {
                   children: List.generate(mylist.length, (index) =>    Padding(
                     padding: const EdgeInsets.all(6),
                     child: Container(
-                    height: 35,
-                    width: 80,
+                    
+                    padding: EdgeInsets.all(8),
                     decoration: BoxDecoration(color: ColorConstant.black,borderRadius: BorderRadius.circular(8)),
                          child: Center(child: Text(mylist[index],style: TextStyle(fontSize: 16,color: ColorConstant.primarywhite,fontWeight: FontWeight.w400),)), 
                                    ),

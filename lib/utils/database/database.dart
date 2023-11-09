@@ -7,7 +7,11 @@ class DataBase {
     "Gaming",
     "Music",
     "News",
-    "Live"
+    "Live",
+    "Motorcycles",
+    "Cooking shows",
+      "Smartphones",
+        "Android Studio"
   ];
   static List<Map> homecontainercardList = [
     {
@@ -65,7 +69,9 @@ class DataBase {
     "Live",
     "Music",
     "News",
-    "posts"
+    "posts",
+    "Continue watching",
+    
   ];
    static List<Map> subscriptionstoryList = [
 {"image":ImageConstant.avatarimage, "Names":"Hydrofire YT"},

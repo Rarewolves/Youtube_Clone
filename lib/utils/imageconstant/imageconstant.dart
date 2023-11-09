@@ -28,5 +28,7 @@ class ImageConstant{
                     static String shorts4 ="assets/images/Peaky Blinders _ Poster design.jpeg";
                          static String info ="assets/icons/information.png";
                               static String devices ="assets/icons/responsive.png";
+                                static String backarrow="assets/icons/back.png";
+                                  static String mic="assets/icons/voice.png";
 
 } 

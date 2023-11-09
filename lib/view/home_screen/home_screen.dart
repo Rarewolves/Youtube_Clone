@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:youtube_clone/globalwidgets/search_screen/search_screen.dart';
 import 'package:youtube_clone/utils/colorconstant/colorconstant.dart';
 import 'package:youtube_clone/utils/database/database.dart';
+
+import 'package:youtube_clone/view/home_screen/widgets/alertdilog/alertdilog.dart';
 import 'package:youtube_clone/view/home_screen/widgets/container_card/container_card.dart';
 import 'package:youtube_clone/view/home_screen/widgets/suggetion_card/suggetion_card.dart';
 
@@ -36,23 +39,8 @@ class HomeScreen extends StatelessWidget {
           Row(
                 children: [
                  InkWell(onTap: () {
-                   showDialog(context: context, builder: (context) => AlertDialog(
-
-                     title: Text('Connect to a  device',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w700,color: ColorConstant.primarywhite,),),
-                     backgroundColor: ColorConstant.black,
-
-                  actions: [
-                    Column(children: [
-                      Row(children: [
-                        SizedBox(width: 5,),
-                        SizedBox(height: 20,width: 20,
-                          child: CircularProgressIndicator(color: ColorConstant.primarywhite,)),
-                        SizedBox(width: 10,),
-                      Text('Searching for devices',style: TextStyle(fontSize: 14,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,),),
-                      ],)
-                    ],)
-                  ],
-                   ),
+                   showDialog(context: context, builder: (context) =>
+                   AlertDilog()
                                  
                    );
                  },
@@ -60,7 +48,10 @@ class HomeScreen extends StatelessWidget {
                  SizedBox(width: 18,),
                 Image.asset("assets/icons/bell.png",scale: 24,color: ColorConstant.primarywhite,),
                  SizedBox(width: 18,),
-                          Image.asset("assets/icons/search.png",scale: 20,color: ColorConstant.primarywhite,),
+                          InkWell(onTap: () {
+                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SearchScreen(),));
+                          },
+                            child: Image.asset("assets/icons/search.png",scale: 20,color: ColorConstant.primarywhite,)),
                           SizedBox(width: 15,)
                          
           ],)

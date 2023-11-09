@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:youtube_clone/utils/colorconstant/colorconstant.dart';
 import 'package:youtube_clone/view/bottom_navigation/bottom_navigation.dart';
-import 'package:youtube_clone/view/home_screen/home_screen.dart';
+
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -15,7 +15,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-  Timer( Duration(seconds: 4), () { 
+  Timer( Duration(seconds: 2), () { 
     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => BottomNavigation()));
   });
     super.initState();
