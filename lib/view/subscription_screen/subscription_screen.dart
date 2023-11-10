@@ -3,6 +3,7 @@ import 'package:youtube_clone/utils/colorconstant/colorconstant.dart';
 import 'package:youtube_clone/utils/database/database.dart';
 import 'package:youtube_clone/view/home_screen/widgets/alertdilog/alertdilog.dart';
 import 'package:youtube_clone/view/home_screen/widgets/container_card/container_card.dart';
+import 'package:youtube_clone/view/home_screen/widgets/homesub_icons/homesub_icons.dart';
 import 'package:youtube_clone/view/home_screen/widgets/suggetion_card/suggetion_card.dart';
 import 'package:youtube_clone/view/subscription_screen/subscription_card/subscription_card.dart';
 
@@ -23,36 +24,7 @@ class SubscriptionScreen extends StatelessWidget {
             
             background:   Column(
               children: [SizedBox(height: 40,),
-                Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-           
-                  children: [
-                    
-                  
-                  Row(children: [
-                    SizedBox(width: 12),
-                   
-                Image.asset("assets/icons/youtube.png",scale: 18,),
-                SizedBox(width: 5,),
-                Text('YouTube',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite),)
-          ],),
-          Row(
-                children: [
-                 InkWell(onTap: () {
-                   showDialog(context: context, builder: (context) => 
-                AlertDilog()
-                   );
-                 },
-                  
-                  child: Image.asset("assets/icons/cast.png",scale: 18,color: ColorConstant.primarywhite,)),
-                 SizedBox(width: 18,),
-                Image.asset("assets/icons/bell.png",scale: 24,color: ColorConstant.primarywhite,),
-                 SizedBox(width: 18,),
-                          Image.asset("assets/icons/search.png",scale: 20,color: ColorConstant.primarywhite,),
-                          SizedBox(width: 15,)
-                         
-          ],)
-                  
-                ],),
+            HomesubIcons(),
                 SizedBox(height: 10),
                 SubscriptionCard(imagelist:DataBase.subscriptionstoryList),
                 SizedBox(height: 8),

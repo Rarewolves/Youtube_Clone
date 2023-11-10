@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:youtube_clone/globalwidgets/search_screen/search_screen.dart';
+import 'package:youtube_clone/view/home_screen/widgets/homesub_icons/homesub_icons.dart';
+import 'package:youtube_clone/view/search_screen/search_screen.dart';
 import 'package:youtube_clone/utils/colorconstant/colorconstant.dart';
 import 'package:youtube_clone/utils/database/database.dart';
 
@@ -20,43 +21,12 @@ class HomeScreen extends StatelessWidget {
             backgroundColor: ColorConstant.primaryblack,
             expandedHeight: 102,
             floating: true,
+            
           flexibleSpace: FlexibleSpaceBar(
             
             background:   Column(
               children: [SizedBox(height: 40,),
-                Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
-           
-                  children: [
-                    
-                  
-                  Row(children: [
-                    SizedBox(width: 12),
-                   
-                Image.asset("assets/icons/youtube.png",scale: 18,),
-                SizedBox(width: 5,),
-                Text('YouTube',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite),)
-          ],),
-          Row(
-                children: [
-                 InkWell(onTap: () {
-                   showDialog(context: context, builder: (context) =>
-                   AlertDilog()
-                                 
-                   );
-                 },
-                  child: Image.asset("assets/icons/cast.png",scale: 18,color: ColorConstant.primarywhite,)),
-                 SizedBox(width: 18,),
-                Image.asset("assets/icons/bell.png",scale: 24,color: ColorConstant.primarywhite,),
-                 SizedBox(width: 18,),
-                          InkWell(onTap: () {
-                            Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SearchScreen(),));
-                          },
-                            child: Image.asset("assets/icons/search.png",scale: 20,color: ColorConstant.primarywhite,)),
-                          SizedBox(width: 15,)
-                         
-          ],)
-                  
-                ],),
+              HomesubIcons(),
                 SizedBox(height: 10),
                  SuggetionCard(mylist: DataBase.suggetionList,) ,
               ],

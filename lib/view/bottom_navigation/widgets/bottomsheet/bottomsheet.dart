@@ -13,8 +13,8 @@ final List<Map> addlist;
                child: Padding(
                  padding: const EdgeInsets.only(bottom: 10),
                  child: Row(children: [
-                  CircleAvatar(radius: 24,backgroundColor: ColorConstant.grey,
-                      child: Image.asset(addlist[index]["images"],scale: 24,),
+                  CircleAvatar(radius: 24,backgroundColor: ColorConstant.darkgrey,
+                      child: Image.asset(addlist[index]["images"],scale: 24,color: ColorConstant.primarywhite,),
                   ),
                   SizedBox(width:12),
                      Text(addlist[index]["title"],style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite),

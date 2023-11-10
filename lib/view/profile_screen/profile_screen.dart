@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_clone/utils/colorconstant/colorconstant.dart';
 import 'package:youtube_clone/utils/database/database.dart';
+import 'package:youtube_clone/utils/imageconstant/imageconstant.dart';
 import 'package:youtube_clone/view/home_screen/widgets/alertdilog/alertdilog.dart';
 import 'package:youtube_clone/view/profile_screen/widgets/accountcard/accountcard.dart';
 import 'package:youtube_clone/view/profile_screen/widgets/card_builder/card_builder.dart';
 import 'package:youtube_clone/view/profile_screen/widgets/container_card/container_card.dart';
 import 'package:youtube_clone/view/profile_screen/widgets/history_list/history_list.dart';
 import 'package:youtube_clone/view/profile_screen/widgets/playlist_card/playlist_card.dart';
+import 'package:youtube_clone/view/search_screen/search_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -19,13 +21,17 @@ class ProfileScreen extends StatelessWidget {
         actions: [   InkWell(onTap: () {
           showDialog(context: context, builder:(context) => AlertDilog());
         },
-          child: Image.asset("assets/icons/cast.png",scale: 18,color: ColorConstant.primarywhite,)),
+          child: Image.asset(ImageConstant.cast,scale: 18,color: ColorConstant.primarywhite,)),
                
-                Image.asset("assets/icons/bell.png",scale: 24,color: ColorConstant.primarywhite,),
+                Image.asset(ImageConstant.bell,scale: 24,color: ColorConstant.primarywhite,),
               
-                          Image.asset("assets/icons/search.png",scale: 20,color: ColorConstant.primarywhite,),
+                          InkWell(
+                            onTap: () {
+                              Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SearchScreen()));
+                            },
+                            child: Image.asset(ImageConstant.search,scale: 20,color: ColorConstant.primarywhite,)),
                        
-                           Image.asset("assets/icons/gear.png",scale: 21,color: ColorConstant.primarywhite,),
+                           Image.asset(ImageConstant.settings,scale: 21,color: ColorConstant.primarywhite,),
                           ],
                           toolbarHeight: 50,
                           backgroundColor: ColorConstant.primaryblack,
@@ -51,7 +57,7 @@ class ProfileScreen extends StatelessWidget {
                                  SizedBox(width: 5,),
                           Text("hjjjfdfjdhfd",style: TextStyle(fontSize: 14,fontWeight: FontWeight.w500,color: ColorConstant.grey,)),
                            SizedBox(width: 5,),
-                           Image.asset("assets/icons/math.png",scale: 34,color: ColorConstant.primarywhite,),
+                           Image.asset(ImageConstant.rightarrows,scale: 34,color: ColorConstant.primarywhite,),
                                
                        ],
                      ),

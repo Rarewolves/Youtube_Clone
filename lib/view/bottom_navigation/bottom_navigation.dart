@@ -74,7 +74,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                 Text("Create",style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite)),
-                Image.asset("assets/icons/close.png",scale:28,color: ColorConstant.grey,),
+                Image.asset("assets/icons/close.png",scale:26,color: ColorConstant.darkgrey,),
               
                
               ],),

@@ -15,51 +15,51 @@ class DataBase {
   ];
   static List<Map> homecontainercardList = [
     {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
+      "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-      "Image":ImageConstant.containerimage,
+      "Image":ImageConstant.shorts1,
        "avatarImage":ImageConstant.avatarimage
     },
     {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
+      "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-       "Image":ImageConstant.containerimage,
+       "Image":ImageConstant.shorts2,
         "avatarImage":ImageConstant.avatarimage
     },
     {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
+      "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-       "Image":ImageConstant.containerimage,
+       "Image":ImageConstant.shorts3,
         "avatarImage":ImageConstant.avatarimage
     },
     {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
+      "Name": "peaky blinders",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-       "Image":ImageConstant.containerimage,
+       "Image":ImageConstant.shorts4,
        "avatarImage":ImageConstant.avatarimage
     },
      {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
+      "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-       "Image":ImageConstant.containerimage,
+       "Image":ImageConstant.shorts1,
        "avatarImage":ImageConstant.avatarimage
     },
      {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
+      "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-       "Image":ImageConstant.containerimage,
+       "Image":ImageConstant.shorts2,
        "avatarImage":ImageConstant.avatarimage
     },
      {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
+      "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-       "Image":ImageConstant.containerimage,
+       "Image":ImageConstant.shorts3,
        "avatarImage":ImageConstant.avatarimage
     },
      {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
+      "Name": "peaky blinders",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-       "Image":ImageConstant.containerimage,
+       "Image":ImageConstant.shorts4,
        "avatarImage":ImageConstant.avatarimage
     },
   ];
@@ -90,51 +90,28 @@ class DataBase {
     {
       "Name": "dhghsfh sshdfh hfdg hfgh",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-      "Image":ImageConstant.subimages,
+      "Image":ImageConstant.car1,
        "avatarImage":ImageConstant.subavatarimage
     },
      {
       "Name": "dhghsfh sshdfh hfdg hfgh",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-      "Image":ImageConstant.subimages,
+      "Image":ImageConstant.car2,
        "avatarImage":ImageConstant.subavatarimage
     },
      {
       "Name": "dhghsfh sshdfh hfdg hfgh",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-      "Image":ImageConstant.subimages,
+      "Image":ImageConstant.car3,
        "avatarImage":ImageConstant.subavatarimage
     },
      {
       "Name": "dhghsfh sshdfh hfdg hfgh",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
-      "Image":ImageConstant.subimages,
+      "Image":ImageConstant.car4,
        "avatarImage":ImageConstant.subavatarimage
     },
-     {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
-      "textlist": ["Name", "1 lakh views", "1 year ago"],
-      "Image":ImageConstant.subimages,
-       "avatarImage":ImageConstant.subavatarimage
-    },
-     {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
-      "textlist": ["Name", "1 lakh views", "1 year ago"],
-      "Image":ImageConstant.subimages,
-       "avatarImage":ImageConstant.subavatarimage
-    },
-     {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
-      "textlist": ["Name", "1 lakh views", "1 year ago"],
-      "Image":ImageConstant.subimages,
-       "avatarImage":ImageConstant.subavatarimage
-    },
-     {
-      "Name": "dhghsfh sshdfh hfdg hfgh",
-      "textlist": ["Name", "1 lakh views", "1 year ago"],
-      "Image":ImageConstant.subimages,
-       "avatarImage":ImageConstant.subavatarimage
-    },
+   
    ];
     
 
@@ -188,7 +165,27 @@ class DataBase {
     ImageConstant.shorts4,
   ];
 
+static List<Map> searchlist =[
 
+{"search":"Android","images":ImageConstant.shorts4},
+{"search":"Flutter","images":ImageConstant.shorts1},
+{"search":"Android","images":ImageConstant.shorts3},
+{"search":"Flutter","images":ImageConstant.shorts2},
+{"search":"Android","images":ImageConstant.shorts4},
+{"search":"Flutter","images":ImageConstant.shorts1},
+{"search":"Android","images":ImageConstant.shorts3},
+{"search":"Flutter","images":ImageConstant.shorts2},
+{"search":"Android","images":ImageConstant.shorts4},
+{"search":"Flutter","images":ImageConstant.shorts1},
+{"search":"Android","images":ImageConstant.shorts3},
+{"search":"Flutter","images":ImageConstant.shorts2},
+{"search":"Android","images":ImageConstant.shorts4},
+{"search":"Flutter","images":ImageConstant.shorts1},
+{"search":"Android","images":ImageConstant.shorts3},
+{"search":"Flutter","images":ImageConstant.shorts2},
+
+
+];
 
 
 }
