@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_clone/view/home_screen/widgets/homesub_icons/homesub_icons.dart';
-import 'package:youtube_clone/view/search_screen/search_screen.dart';
+
 import 'package:youtube_clone/utils/colorconstant/colorconstant.dart';
 import 'package:youtube_clone/utils/database/database.dart';
 
-import 'package:youtube_clone/view/home_screen/widgets/alertdilog/alertdilog.dart';
+
 import 'package:youtube_clone/view/home_screen/widgets/container_card/container_card.dart';
 import 'package:youtube_clone/view/home_screen/widgets/suggetion_card/suggetion_card.dart';
 
@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
         slivers: [
           SliverAppBar(elevation: 0,
             backgroundColor: ColorConstant.primaryblack,
-            expandedHeight: 102,
+            expandedHeight: 96,
             floating: true,
             
           flexibleSpace: FlexibleSpaceBar(

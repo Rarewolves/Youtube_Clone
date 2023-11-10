@@ -74,14 +74,14 @@ class DataBase {
     
   ];
    static List<Map> subscriptionstoryList = [
-{"image":ImageConstant.avatarimage, "Names":"Hydrofire YT"},
-{"image":ImageConstant.avatarimage, "Names":"Hydrofire YT"},
-{"image":ImageConstant.avatarimage, "Names":"Hydrofire YT"},
-{"image":ImageConstant.avatarimage, "Names":"Hydrofire YT"},
-{"image":ImageConstant.avatarimage, "Names":"Hydrofire YT"},
-{"image":ImageConstant.avatarimage, "Names":"Hydrofire YT"},
-{"image":ImageConstant.avatarimage, "Names":"Hydrofire YT"},
-{"image":ImageConstant.avatarimage, "Names":"Hydrofire YT"},
+{"image":ImageConstant.subavatarimage, "Names":"Hydrofire YT"},
+{"image":ImageConstant.subavatarimage, "Names":"Hydrofire YT"},
+{"image":ImageConstant.subavatarimage, "Names":"Hydrofire YT"},
+{"image":ImageConstant.subavatarimage, "Names":"Hydrofire YT"},
+{"image":ImageConstant.subavatarimage, "Names":"Hydrofire YT"},
+{"image":ImageConstant.subavatarimage, "Names":"Hydrofire YT"},
+{"image":ImageConstant.subavatarimage, "Names":"Hydrofire YT"},
+{"image":ImageConstant.subavatarimage, "Names":"Hydrofire YT"},
   ];
 
 

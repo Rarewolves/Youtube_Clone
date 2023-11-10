@@ -14,11 +14,11 @@ class SearchList extends StatelessWidget {
               
               child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-              Row(children: [        Image.asset(ImageConstant.activity,scale: 20,color: ColorConstant.primarywhite,),SizedBox(width: 12,),
+              Row(children: [        Image.asset(ImageConstant.activity,scale: 20,color: ColorConstant.primarywhite,),SizedBox(width: 20,),
               Text(search,style: TextStyle(fontSize: 16,fontWeight: FontWeight.w600,color: ColorConstant.primarywhite,)),],),
                 Row(children: [
-                              Container(height: 50,width: 90,decoration: BoxDecoration(image: DecorationImage(image: AssetImage(image),fit: BoxFit.cover)),),
-                              SizedBox(width: 12,),
+                              Container(height: 40,width: 65,decoration: BoxDecoration(image: DecorationImage(image: AssetImage(image),fit: BoxFit.cover)),),
+                              SizedBox(width: 10,),
                 Image.asset(ImageConstant.up_leftarrow,scale: 20,color: ColorConstant.primarywhite,),
                 ],)
           

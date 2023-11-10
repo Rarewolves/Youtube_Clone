@@ -41,5 +41,9 @@ class ImageConstant {
      static String bell = "assets/icons/bell.png";
       static String search = "assets/icons/search.png";
        static String settings = "assets/icons/gear.png";
+         static String close = "assets/icons/close.png";
+             static String home = "assets/icons/house-black-silhouette-without-door.png";
+                 static String plus = "assets/icons/plus (1).png";
+                     static String subscription ="assets/icons/subscribe.png";
 
 }
