@@ -1,4 +1,5 @@
 import 'package:youtube_clone/utils/imageconstant/imageconstant.dart';
+import 'package:youtube_clone/view/home_screen/widgets/short_list/short_list.dart';
 
 class DataBase {
   static List<String> suggetionList = [
@@ -13,35 +14,49 @@ class DataBase {
       "Smartphones",
         "Android Studio"
   ];
+
+
+  static List<String> shortlist=[
+ ImageConstant.car1,
+ ImageConstant.car2,
+ ImageConstant.car3,
+ ImageConstant.car4,
+  ];
   static List<Map> homecontainercardList = [
     {
       "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
       "Image":ImageConstant.shorts1,
        "avatarImage":ImageConstant.avatarimage,
-       "heading":"Hari"
+       "heading":"Hari",
+       
+      
     },
     {
       "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
        "Image":ImageConstant.shorts2,
         "avatarImage":ImageConstant.avatarimage,
-               "heading":"Hari"
+               "heading":"Hari",
+                 "child":ShortList(imageslist: DataBase.shortlist,)
     },
     {
       "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
        "Image":ImageConstant.shorts3,
         "avatarImage":ImageConstant.avatarimage,
-               "heading":"Hari"
+               "heading":"Hari",
+               
     },
     {
       "Name": "peaky blinders",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
        "Image":ImageConstant.shorts4,
        "avatarImage":ImageConstant.avatarimage,
-              "heading":"Hari"
+              "heading":"Hari",
+             
     },
+     
       
    
   ];

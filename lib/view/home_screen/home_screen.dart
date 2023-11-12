@@ -40,13 +40,13 @@ class HomeScreen extends StatelessWidget {
           ),
          SliverToBoxAdapter(
       
-          child: DataBase.homecontainercardList.length ==4?
+          child: 
            Column(
             children: [
               
               Column(children: List.generate(DataBase.homecontainercardList.length, (index) =>
                  ContainerCard(textlist: DataBase.homecontainercardList[index]["textlist"],title: DataBase.homecontainercardList[index]["Name"],image: DataBase.homecontainercardList[index]["Image"],avatarimage: DataBase.homecontainercardList[index]["avatarImage"],
-                
+                child: DataBase.homecontainercardList[index]["child"],
                  
                  
                  
@@ -56,19 +56,11 @@ class HomeScreen extends StatelessWidget {
               ),
                ),
                
-       ShortList()
+       
             ],
-          ):
+          ),
              
-              Column(children: List.generate(DataBase.homecontainercardList.length, (index) =>
-                 ContainerCard(textlist: DataBase.homecontainercardList[index]["textlist"],title: DataBase.homecontainercardList[index]["Name"],image: DataBase.homecontainercardList[index]["Image"],avatarimage: DataBase.homecontainercardList[index]["avatarImage"]),
-              
-              
-              ),
-
-
-
-         ),
+             
          )
         ],
       ),

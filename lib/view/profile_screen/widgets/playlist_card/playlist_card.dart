@@ -50,17 +50,22 @@ final List<Map> imagetitlelist;
                       ),
                     ),
                     SizedBox(height: 10,),
-                    Row(
+                    Row(crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Column(crossAxisAlignment: CrossAxisAlignment.start,
+                        Row(
                           children: [
-                            Text(imagetitlelist[index]["title"],style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,)),
-                            SizedBox(height: 5,),
-                                 Text(imagetitlelist[index]["subtitle"],style: TextStyle(fontSize: 13,fontWeight: FontWeight.w400,color: ColorConstant.grey,)),
+                            Column(crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(imagetitlelist[index]["title"],style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,)),
+                                SizedBox(height: 5,),
+                                     Text(imagetitlelist[index]["subtitle"],style: TextStyle(fontSize: 13,fontWeight: FontWeight.w400,color: ColorConstant.grey,)),
+                              ],
+                            ),
+                            SizedBox(width: 55,),
+                           
                           ],
                         ),
-                        SizedBox(width: 55,),
-                        Icon(Icons.more_vert_outlined,color: ColorConstant.primarywhite,size: 15,)
+                         Icon(Icons.more_vert_outlined,color: ColorConstant.primarywhite,size: 15,)
                       ],
                     )
                   ],)
