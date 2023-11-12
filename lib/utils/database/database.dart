@@ -18,50 +18,32 @@ class DataBase {
       "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
       "Image":ImageConstant.shorts1,
-       "avatarImage":ImageConstant.avatarimage
+       "avatarImage":ImageConstant.avatarimage,
+       "heading":"Hari"
     },
     {
       "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
        "Image":ImageConstant.shorts2,
-        "avatarImage":ImageConstant.avatarimage
+        "avatarImage":ImageConstant.avatarimage,
+               "heading":"Hari"
     },
     {
       "Name": "money heist",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
        "Image":ImageConstant.shorts3,
-        "avatarImage":ImageConstant.avatarimage
+        "avatarImage":ImageConstant.avatarimage,
+               "heading":"Hari"
     },
     {
       "Name": "peaky blinders",
       "textlist": ["Name", "1 lakh views", "1 year ago"],
        "Image":ImageConstant.shorts4,
-       "avatarImage":ImageConstant.avatarimage
+       "avatarImage":ImageConstant.avatarimage,
+              "heading":"Hari"
     },
-     {
-      "Name": "money heist",
-      "textlist": ["Name", "1 lakh views", "1 year ago"],
-       "Image":ImageConstant.shorts1,
-       "avatarImage":ImageConstant.avatarimage
-    },
-     {
-      "Name": "money heist",
-      "textlist": ["Name", "1 lakh views", "1 year ago"],
-       "Image":ImageConstant.shorts2,
-       "avatarImage":ImageConstant.avatarimage
-    },
-     {
-      "Name": "money heist",
-      "textlist": ["Name", "1 lakh views", "1 year ago"],
-       "Image":ImageConstant.shorts3,
-       "avatarImage":ImageConstant.avatarimage
-    },
-     {
-      "Name": "peaky blinders",
-      "textlist": ["Name", "1 lakh views", "1 year ago"],
-       "Image":ImageConstant.shorts4,
-       "avatarImage":ImageConstant.avatarimage
-    },
+      
+   
   ];
    static List<String> subscriptionList = [
     "All",
@@ -125,7 +107,7 @@ class DataBase {
   ];
 
  static  List<Map> AddbottomsheetList = [
-  {"images":ImageConstant.recordicon,"title": "Create a Short"},
+  {"images":ImageConstant.shorts,"title": "Create a Short"},
   {"images":ImageConstant.uploadicon,"title": "Upload a video"},
     {"images":ImageConstant.liveicon,"title": "Go live"},
       {"images":ImageConstant.writeicon,"title":  "Create a post"},

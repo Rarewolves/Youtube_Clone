@@ -5,7 +5,7 @@ class ImageConstant {
   static String subimages =
       "assets/images/haotian-zheng-ryxdXQoVPVs-unsplash.jpg";
   static String subavatarimage = "assets/images/polar-bear.png";
-  static String recordicon = "assets/icons/record.png";
+  static String recordicon = "assets/icons/Group6.png";
   static String liveicon = "assets/icons/live.png";
   static String uploadicon = "assets/icons/upload.png";
   static String writeicon = "assets/icons/write.png";
@@ -17,8 +17,9 @@ class ImageConstant {
   static String download = "assets/icons/download-arrow.png";
   static String bargraph = "assets/icons/bar-graph.png";
   static String account = "assets/icons/account.png";
+    static String yourvideo = "assets/icons/Group9.png";
   static String movieclapper = "assets/icons/clapperboard.png";
-  static String tick = "assets/icons/check.png";
+  static String tick = "assets/icons/Group11.png";
   static String incognito = "assets/icons/anonymous (1).png";
   static String shorts1 = "assets/images/download.jpeg";
   static String shorts2 = "assets/images/It (2017), de Andy Muschietti.jpeg";
@@ -36,14 +37,15 @@ class ImageConstant {
   static String car2 = "assets/images/Taxi Car School Driving.jpeg";
   static String car3 = "assets/images/RG4 MIEDO.jpeg";
   static String car4 = "assets/images/Pin By Anucha P Rang On Bmw Cars Bmw Wallpapers Bmw M3 Bmw.jpeg";
-   static String youtube = "assets/icons/youtube.png";
+   static String youtube = "assets/icons/Group.png";
+    static String youtubetext = "assets/icons/Group1.png";
     static String cast = "assets/icons/cast.png";
-     static String bell = "assets/icons/bell.png";
-      static String search = "assets/icons/search.png";
+     static String bell = "assets/icons/Group10.png";
+      static String search = "assets/icons/Group12.png";
        static String settings = "assets/icons/gear.png";
          static String close = "assets/icons/close.png";
-             static String home = "assets/icons/house-black-silhouette-without-door.png";
+             static String home = "assets/icons/Group3.png";
                  static String plus = "assets/icons/plus (1).png";
-                     static String subscription ="assets/icons/subscribe.png";
-
+                     static String subscription ="assets/icons/Group4.png";
+ static String shorts="assets/icons/youtube-shorts-logo-15253 (1).png";
 }

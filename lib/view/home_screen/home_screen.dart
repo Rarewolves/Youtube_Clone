@@ -6,6 +6,7 @@ import 'package:youtube_clone/utils/database/database.dart';
 
 
 import 'package:youtube_clone/view/home_screen/widgets/container_card/container_card.dart';
+import 'package:youtube_clone/view/home_screen/widgets/short_list/short_list.dart';
 import 'package:youtube_clone/view/home_screen/widgets/suggetion_card/suggetion_card.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -38,11 +39,36 @@ class HomeScreen extends StatelessWidget {
 
           ),
          SliverToBoxAdapter(
-          child: Column(children: List.generate(DataBase.homecontainercardList.length, (index) =>
-             ContainerCard(textlist: DataBase.homecontainercardList[index]["textlist"],title: DataBase.homecontainercardList[index]["Name"],image: DataBase.homecontainercardList[index]["Image"],avatarimage: DataBase.homecontainercardList[index]["avatarImage"]),
-          
-          
-          ),),
+      
+          child: DataBase.homecontainercardList.length ==4?
+           Column(
+            children: [
+              
+              Column(children: List.generate(DataBase.homecontainercardList.length, (index) =>
+                 ContainerCard(textlist: DataBase.homecontainercardList[index]["textlist"],title: DataBase.homecontainercardList[index]["Name"],image: DataBase.homecontainercardList[index]["Image"],avatarimage: DataBase.homecontainercardList[index]["avatarImage"],
+                
+                 
+                 
+                 
+                 ),
+              
+              
+              ),
+               ),
+               
+       ShortList()
+            ],
+          ):
+             
+              Column(children: List.generate(DataBase.homecontainercardList.length, (index) =>
+                 ContainerCard(textlist: DataBase.homecontainercardList[index]["textlist"],title: DataBase.homecontainercardList[index]["Name"],image: DataBase.homecontainercardList[index]["Image"],avatarimage: DataBase.homecontainercardList[index]["avatarImage"]),
+              
+              
+              ),
+
+
+
+         ),
          )
         ],
       ),

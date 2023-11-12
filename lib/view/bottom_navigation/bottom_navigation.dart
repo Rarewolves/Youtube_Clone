@@ -52,11 +52,11 @@ class _BottomNavigationState extends State<BottomNavigation> {
        },
         
         items: [
-      BottomNavigationBarItem(icon:Image.asset(ImageConstant.home,scale: 25,color: selectedindex==0 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
+      BottomNavigationBarItem(icon:Image.asset(ImageConstant.home,color: selectedindex==0 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
       label: 'Home'
       
       ),
-         BottomNavigationBarItem(icon:Image.asset(ImageConstant.recordicon,scale: 25,color: selectedindex==1 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
+         BottomNavigationBarItem(icon:Image.asset(ImageConstant.recordicon,color: selectedindex==1 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
       label: 'Shorts'
       ),
        BottomNavigationBarItem(icon:InkWell(
@@ -95,7 +95,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
        ),
       label: ''
       ),
-          BottomNavigationBarItem(icon:Image.asset(ImageConstant.subscription,scale: 25,color: selectedindex==2 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
+          BottomNavigationBarItem(icon:Image.asset(ImageConstant.subscription,color: selectedindex==2 ? ColorConstant.primarywhite:ColorConstant.primarywhite,),
       label: 'Scubscriptions'
       ),
           BottomNavigationBarItem(icon: CircleAvatar(radius: 14,backgroundColor: ColorConstant.primarywhite,

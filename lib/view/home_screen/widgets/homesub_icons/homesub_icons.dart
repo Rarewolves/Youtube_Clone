@@ -17,9 +17,10 @@ class HomesubIcons extends StatelessWidget {
                   Row(children: [
                     SizedBox(width: 12),
                    
-                Image.asset(ImageConstant.youtube,scale: 18,),
+                Image.asset(ImageConstant.youtube),
                 SizedBox(width: 5,),
-                Text('YouTube',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color: ColorConstant.primarywhite),)
+                  Image.asset(ImageConstant.youtubetext,color: ColorConstant.primarywhite,),
+               
           ],),
           Row(
                 children: [
@@ -31,12 +32,12 @@ class HomesubIcons extends StatelessWidget {
                  },
                   child: Image.asset(ImageConstant.cast,scale: 18,color: ColorConstant.primarywhite,)),
                  SizedBox(width: 18,),
-                Image.asset(ImageConstant.bell,scale: 24,color: ColorConstant.primarywhite,),
+                Image.asset(ImageConstant.bell,color: ColorConstant.primarywhite,),
                  SizedBox(width: 18,),
                           InkWell(onTap: () {
                             Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SearchScreen(),));
                           },
-                            child: Image.asset(ImageConstant.search,scale: 20,color: ColorConstant.primarywhite,)),
+                            child: Image.asset(ImageConstant.search,color: ColorConstant.primarywhite,)),
                           SizedBox(width: 15,)
                          
           ],)

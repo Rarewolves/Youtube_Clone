@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:youtube_clone/utils/colorconstant/colorconstant.dart';
 
 class ContainerCard extends StatelessWidget {
-  const ContainerCard({required this.textlist,required this.title,required this.image,required this.avatarimage,});
+  const ContainerCard({required this.textlist,required this.title,required this.image,required this.avatarimage,
+  
+  });
   final List<String> textlist;
   final String title;
   final String image;
    final String avatarimage;
+
+  
 
   @override
   Widget build(BuildContext context) {
@@ -42,9 +46,10 @@ class ContainerCard extends StatelessWidget {
                 
                 ],)
                 ),),
-              )
+              ),
             ],)
-          ],)
+          ],),
+      
         ],
       ),
     );

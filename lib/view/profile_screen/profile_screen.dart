@@ -23,13 +23,13 @@ class ProfileScreen extends StatelessWidget {
         },
           child: Image.asset(ImageConstant.cast,scale: 18,color: ColorConstant.primarywhite,)),
                
-                Image.asset(ImageConstant.bell,scale: 24,color: ColorConstant.primarywhite,),
+                Image.asset(ImageConstant.bell,color: ColorConstant.primarywhite,),
               
                           InkWell(
                             onTap: () {
                               Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SearchScreen()));
                             },
-                            child: Image.asset(ImageConstant.search,scale: 20,color: ColorConstant.primarywhite,)),
+                            child: Image.asset(ImageConstant.search,color: ColorConstant.primarywhite,)),
                        
                            Image.asset(ImageConstant.settings,scale: 21,color: ColorConstant.primarywhite,),
                           ],

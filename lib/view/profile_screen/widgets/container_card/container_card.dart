@@ -14,7 +14,7 @@ class ContainerCard extends StatelessWidget {
                   children: [
                   Row(children: [
                     SizedBox(width: 20,),
-                    Image.asset(ImageConstant.account,scale: 28,color: ColorConstant.primarywhite,),
+                    Image.asset(ImageConstant.yourvideo,color: ColorConstant.primarywhite,),
                     SizedBox(width: 15,),
                        Text("Your videos",style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400,color: ColorConstant.primarywhite,)),
                   ],),
@@ -33,7 +33,7 @@ class ContainerCard extends StatelessWidget {
                     
                        Padding(
                          padding: const EdgeInsets.only(right: 20),
-                         child: CircleAvatar(radius: 10,backgroundColor: Colors.white,child: Image.asset(ImageConstant.tick,scale: 28,color: ColorConstant.primaryblack,),),
+                         child: Image.asset(ImageConstant.tick,color: ColorConstant.primarywhite,),
                        ),
                        
 
